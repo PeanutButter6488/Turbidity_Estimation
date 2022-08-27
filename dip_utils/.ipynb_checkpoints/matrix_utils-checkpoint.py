@@ -1,6 +1,5 @@
 """
 Simple Matrix Utilities
-stough, 202-
 """
 
 import numpy as np

@@ -1,6 +1,5 @@
 '''
 Image Processing Visualization Utilities
-stough, 202-
 
 Includes RGB color cube and three-channel histogramming.
 Also a lab_uniform, which normalizes the perceived intensity of
@@ -227,9 +226,9 @@ def vis_hists(I, bins = 256):
     plt.tight_layout()
     
     
-def vis_pair(I, J, figsize = (8,3), shared = True, 
-             first_title = 'Original Image', second_title = 'Watershed Markers',
-             show_ticks = True, **kwargs):
+def vis_pair(I, J, figsize = (6,4), shared = True, 
+             first_title = 'Original', second_title = 'New',
+             show_ticks = False, **kwargs):
     '''
     vis_pair(I, J, figsize = (8,3), shared = True, first_title = 'Original', second_title = 'New'):
     produce a plot of images I and J together. By default takes care of sharing axes to provide
@@ -248,9 +247,9 @@ def vis_pair(I, J, figsize = (8,3), shared = True,
     plt.tight_layout()
     
 def vis_triple(I, J, K, figsize = (8,3), shared = True, 
-               first_title = 'Original', second_title = 'New',
-               third_title = 'Newer',
-               show_ticks = True, **kwargs):
+               first_title = '', second_title = '',
+               third_title = '',
+               show_ticks = False, **kwargs):
     '''
     vis_pair(I, J, figsize = (8,3), shared = True, first_title = 'Original', second_title = 'New'):
     produce a plot of images I and J together. By default takes care of sharing axes to provide
